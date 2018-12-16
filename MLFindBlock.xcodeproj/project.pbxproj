@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		030DCBF7BF1FECB5FA39E76E /* Pods_MLFindBlock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 945DC0844D95D4A4BD859BB4 /* Pods_MLFindBlock.framework */; };
 		E244226221C31589007A7268 /* Perceptron.swift in Sources */ = {isa = PBXBuildFile; fileRef = E244226121C31589007A7268 /* Perceptron.swift */; };
 		E244226421C458DC007A7268 /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = E244226321C458DC007A7268 /* Block.swift */; };
 		E2F6BAA521C1ACA500C6BA2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F6BAA421C1ACA500C6BA2E /* AppDelegate.swift */; };
@@ -17,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		79281871C3A5989D7B67E750 /* Pods-MLFindBlock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLFindBlock.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MLFindBlock/Pods-MLFindBlock.debug.xcconfig"; sourceTree = "<group>"; };
+		945DC0844D95D4A4BD859BB4 /* Pods_MLFindBlock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MLFindBlock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBBFDAEC6B1473740794ACC1 /* Pods-MLFindBlock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLFindBlock.release.xcconfig"; path = "Pods/Target Support Files/Pods-MLFindBlock/Pods-MLFindBlock.release.xcconfig"; sourceTree = "<group>"; };
 		E244226121C31589007A7268 /* Perceptron.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Perceptron.swift; sourceTree = "<group>"; };
 		E244226321C458DC007A7268 /* Block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
 		E2F6BAA121C1ACA500C6BA2E /* MLFindBlock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MLFindBlock.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -33,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				030DCBF7BF1FECB5FA39E76E /* Pods_MLFindBlock.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B4FE40BEA70C3235C279CB9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				945DC0844D95D4A4BD859BB4 /* Pods_MLFindBlock.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B5498B981F1AEF07AAD5DD62 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				79281871C3A5989D7B67E750 /* Pods-MLFindBlock.debug.xcconfig */,
+				CBBFDAEC6B1473740794ACC1 /* Pods-MLFindBlock.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E2F6BA9821C1ACA500C6BA2E = {
 			isa = PBXGroup;
 			children = (
 				E2F6BAA321C1ACA500C6BA2E /* MLFindBlock */,
 				E2F6BAA221C1ACA500C6BA2E /* Products */,
+				B5498B981F1AEF07AAD5DD62 /* Pods */,
+				2B4FE40BEA70C3235C279CB9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E2F6BAB321C1ACA700C6BA2E /* Build configuration list for PBXNativeTarget "MLFindBlock" */;
 			buildPhases = (
+				1E3EFD03CC8DB43B840ED8B8 /* [CP] Check Pods Manifest.lock */,
 				E2F6BA9D21C1ACA500C6BA2E /* Sources */,
 				E2F6BA9E21C1ACA500C6BA2E /* Frameworks */,
 				E2F6BA9F21C1ACA500C6BA2E /* Resources */,
+				3D190C603BC36CDEF7F939BB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,6 +161,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E3EFD03CC8DB43B840ED8B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MLFindBlock-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D190C603BC36CDEF7F939BB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MLFindBlock/Pods-MLFindBlock-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Surge/Surge.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Surge.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MLFindBlock/Pods-MLFindBlock-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E2F6BA9D21C1ACA500C6BA2E /* Sources */ = {
@@ -288,6 +353,7 @@
 		};
 		E2F6BAB421C1ACA700C6BA2E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79281871C3A5989D7B67E750 /* Pods-MLFindBlock.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -306,6 +372,7 @@
 		};
 		E2F6BAB521C1ACA700C6BA2E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBBFDAEC6B1473740794ACC1 /* Pods-MLFindBlock.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

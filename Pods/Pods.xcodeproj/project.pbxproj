@@ -1,0 +1,624 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0083D2CC6B24E60B9CDE15C14B975181 /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = D430E7EC88F9D02A15109915897F2EC7 /* Matrix.swift */; };
+		0ADB2EF2F0A95E0BD7E2AEC2385C25BB /* Pods-MLFindBlock-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D1FD56CC152B61EB4C4B4FE4F9FD6EFB /* Pods-MLFindBlock-dummy.m */; };
+		0B35575F734020347981F484274CF5C5 /* Surge-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C87E8512E355A4E53DB12FE5F51482 /* Surge-dummy.m */; };
+		0EA712339F7A21AF0DCE4A6A2B1394C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4117BBC9DCC7E8606095697F8B7529EA /* Foundation.framework */; };
+		197C08B9D6D63465B57C48EEBD36F6A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4117BBC9DCC7E8606095697F8B7529EA /* Foundation.framework */; };
+		1DF766D4F159BE1A26BBA6C10DC44B2E /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96C775B304F47B34BD5DD543F83D9993 /* Accelerate.framework */; };
+		30506F95F450B01A6E238BC0EB616DC4 /* FFT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129DD9DE29FDA0A404B458941F7E2C0B /* FFT.swift */; };
+		4E70810A026C8616ACABC4F19B260B86 /* Exponential.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AEA607851D5B5A8693FF034A8FAF58 /* Exponential.swift */; };
+		50B86492E30166ADF5B299F5BA402704 /* Power.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CFC19B1AF0872CE5D7990DED6FF9D9 /* Power.swift */; };
+		68ACEE9E6CEBEF776DD35B0CBD292CB6 /* Arithmetic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CDDF5340501A57646E16A6DD4BAEA6 /* Arithmetic.swift */; };
+		72DC4600E5ED8CA1B5336CEED87FE67A /* Surge-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D3041723E1B1F1AF513E3379E37622B /* Surge-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E324388961887E36141038DE03CA1B6 /* Auxiliary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0623031B47BD30B88629C83C47B9BF14 /* Auxiliary.swift */; };
+		80241FDAC16638BEC956EF1BAE175CA9 /* Convolution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DCFBBA2FC181EB39116217DA4A97C40 /* Convolution.swift */; };
+		C7F8EAE64035FF81F01E252BD398ACB4 /* Hyperbolic.swift in Sources */ = {isa = PBXBuildFile; fileRef = C015C70CAB4B3DC53FFC484E261B2C40 /* Hyperbolic.swift */; };
+		E646532614B5F2FD0A95C16B48DA6C71 /* Trigonometric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7110F43AEEE834F5A556E971C4A4AF /* Trigonometric.swift */; };
+		FFCE4DE85568D7FEC8DE909A62668760 /* Pods-MLFindBlock-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C15B007107D270C36CC9A4DFF5379D7 /* Pods-MLFindBlock-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C38C474156641CA93693230ED1BAD899 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B3AC0F72C43103767173FAD6DE016E1;
+			remoteInfo = Surge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00BCF809FB7DC0ADB79339598AED8481 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		024A84182564B907E6B8727BF8DEC3B8 /* Pods-MLFindBlock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MLFindBlock.release.xcconfig"; sourceTree = "<group>"; };
+		0623031B47BD30B88629C83C47B9BF14 /* Auxiliary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Auxiliary.swift; path = Source/Auxiliary.swift; sourceTree = "<group>"; };
+		0E4AD2B3A787AE14FD62A654059CE190 /* Surge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Surge.framework; path = Surge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		129DD9DE29FDA0A404B458941F7E2C0B /* FFT.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FFT.swift; path = Source/FFT.swift; sourceTree = "<group>"; };
+		1ADB3DB78F41AF0AAB046BB829B9C211 /* Pods-MLFindBlock-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MLFindBlock-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1D3041723E1B1F1AF513E3379E37622B /* Surge-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Surge-umbrella.h"; sourceTree = "<group>"; };
+		1E7110F43AEEE834F5A556E971C4A4AF /* Trigonometric.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Trigonometric.swift; path = Source/Trigonometric.swift; sourceTree = "<group>"; };
+		2C15B007107D270C36CC9A4DFF5379D7 /* Pods-MLFindBlock-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MLFindBlock-umbrella.h"; sourceTree = "<group>"; };
+		2DCFBBA2FC181EB39116217DA4A97C40 /* Convolution.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Convolution.swift; path = Source/Convolution.swift; sourceTree = "<group>"; };
+		4117BBC9DCC7E8606095697F8B7529EA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		48C87E8512E355A4E53DB12FE5F51482 /* Surge-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Surge-dummy.m"; sourceTree = "<group>"; };
+		5A84906AB3EC41B624BCBDE3255D8F57 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B54DEDEA58995A5174334C9760EE43A /* Pods-MLFindBlock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MLFindBlock.debug.xcconfig"; sourceTree = "<group>"; };
+		73C5A8F831270C8028B4F87A2E0CF4C8 /* Pods_MLFindBlock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MLFindBlock.framework; path = "Pods-MLFindBlock.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F297DB6F47D9D8089E757B54071A3BC /* Pods-MLFindBlock-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MLFindBlock-resources.sh"; sourceTree = "<group>"; };
+		86CDDF5340501A57646E16A6DD4BAEA6 /* Arithmetic.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Arithmetic.swift; path = Source/Arithmetic.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		96C775B304F47B34BD5DD543F83D9993 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
+		B2DF30D13EF70720F68E7479219A0276 /* Pods-MLFindBlock-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MLFindBlock-frameworks.sh"; sourceTree = "<group>"; };
+		B786E27FEB5B341CFF49A8FDE4F12F95 /* Pods-MLFindBlock.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MLFindBlock.modulemap"; sourceTree = "<group>"; };
+		C015C70CAB4B3DC53FFC484E261B2C40 /* Hyperbolic.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Hyperbolic.swift; path = Source/Hyperbolic.swift; sourceTree = "<group>"; };
+		D1FD56CC152B61EB4C4B4FE4F9FD6EFB /* Pods-MLFindBlock-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MLFindBlock-dummy.m"; sourceTree = "<group>"; };
+		D430E7EC88F9D02A15109915897F2EC7 /* Matrix.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Matrix.swift; path = Source/Matrix.swift; sourceTree = "<group>"; };
+		D6CFC19B1AF0872CE5D7990DED6FF9D9 /* Power.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Power.swift; path = Source/Power.swift; sourceTree = "<group>"; };
+		D9AEA607851D5B5A8693FF034A8FAF58 /* Exponential.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Exponential.swift; path = Source/Exponential.swift; sourceTree = "<group>"; };
+		E3327B1D285D11D8F0B00308996269FF /* Surge.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Surge.xcconfig; sourceTree = "<group>"; };
+		EE0C37627D44DF1966F6D2E62048A2CA /* Surge.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Surge.modulemap; sourceTree = "<group>"; };
+		EF8EC7EAAE4FD8890CABB07444CC1ACB /* Pods-MLFindBlock-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MLFindBlock-acknowledgements.plist"; sourceTree = "<group>"; };
+		FCE10B5D69329EB51EA6CBD82D4D9AD9 /* Surge-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Surge-prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		666227A488795C7868AE4D3CA90E477E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DF766D4F159BE1A26BBA6C10DC44B2E /* Accelerate.framework in Frameworks */,
+				197C08B9D6D63465B57C48EEBD36F6A7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E4A0574C34477FFB354ED7E28D66585 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EA712339F7A21AF0DCE4A6A2B1394C3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0415980594F6016DAD48551D7AE665CB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F7040B867D764DBAB3AC43D51543EF65 /* Surge */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		1693AF98E2BDFC6F291544D4186E7B0D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5A84906AB3EC41B624BCBDE3255D8F57 /* Info.plist */,
+				EE0C37627D44DF1966F6D2E62048A2CA /* Surge.modulemap */,
+				E3327B1D285D11D8F0B00308996269FF /* Surge.xcconfig */,
+				48C87E8512E355A4E53DB12FE5F51482 /* Surge-dummy.m */,
+				FCE10B5D69329EB51EA6CBD82D4D9AD9 /* Surge-prefix.pch */,
+				1D3041723E1B1F1AF513E3379E37622B /* Surge-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Surge";
+			sourceTree = "<group>";
+		};
+		3EC207A9D62F05EABD820B0D7B79A4F6 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				94EDD02412302FB8FD30F19ABBF27608 /* Pods-MLFindBlock */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				57E9E257404473BF6872E40E01D586CD /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		57E9E257404473BF6872E40E01D586CD /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				96C775B304F47B34BD5DD543F83D9993 /* Accelerate.framework */,
+				4117BBC9DCC7E8606095697F8B7529EA /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				0415980594F6016DAD48551D7AE665CB /* Pods */,
+				E3E35578E5629DABDCCDEB2D7A0773EB /* Products */,
+				3EC207A9D62F05EABD820B0D7B79A4F6 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		94EDD02412302FB8FD30F19ABBF27608 /* Pods-MLFindBlock */ = {
+			isa = PBXGroup;
+			children = (
+				00BCF809FB7DC0ADB79339598AED8481 /* Info.plist */,
+				B786E27FEB5B341CFF49A8FDE4F12F95 /* Pods-MLFindBlock.modulemap */,
+				1ADB3DB78F41AF0AAB046BB829B9C211 /* Pods-MLFindBlock-acknowledgements.markdown */,
+				EF8EC7EAAE4FD8890CABB07444CC1ACB /* Pods-MLFindBlock-acknowledgements.plist */,
+				D1FD56CC152B61EB4C4B4FE4F9FD6EFB /* Pods-MLFindBlock-dummy.m */,
+				B2DF30D13EF70720F68E7479219A0276 /* Pods-MLFindBlock-frameworks.sh */,
+				7F297DB6F47D9D8089E757B54071A3BC /* Pods-MLFindBlock-resources.sh */,
+				2C15B007107D270C36CC9A4DFF5379D7 /* Pods-MLFindBlock-umbrella.h */,
+				5B54DEDEA58995A5174334C9760EE43A /* Pods-MLFindBlock.debug.xcconfig */,
+				024A84182564B907E6B8727BF8DEC3B8 /* Pods-MLFindBlock.release.xcconfig */,
+			);
+			name = "Pods-MLFindBlock";
+			path = "Target Support Files/Pods-MLFindBlock";
+			sourceTree = "<group>";
+		};
+		E3E35578E5629DABDCCDEB2D7A0773EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				73C5A8F831270C8028B4F87A2E0CF4C8 /* Pods_MLFindBlock.framework */,
+				0E4AD2B3A787AE14FD62A654059CE190 /* Surge.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F7040B867D764DBAB3AC43D51543EF65 /* Surge */ = {
+			isa = PBXGroup;
+			children = (
+				86CDDF5340501A57646E16A6DD4BAEA6 /* Arithmetic.swift */,
+				0623031B47BD30B88629C83C47B9BF14 /* Auxiliary.swift */,
+				2DCFBBA2FC181EB39116217DA4A97C40 /* Convolution.swift */,
+				D9AEA607851D5B5A8693FF034A8FAF58 /* Exponential.swift */,
+				129DD9DE29FDA0A404B458941F7E2C0B /* FFT.swift */,
+				C015C70CAB4B3DC53FFC484E261B2C40 /* Hyperbolic.swift */,
+				D430E7EC88F9D02A15109915897F2EC7 /* Matrix.swift */,
+				D6CFC19B1AF0872CE5D7990DED6FF9D9 /* Power.swift */,
+				1E7110F43AEEE834F5A556E971C4A4AF /* Trigonometric.swift */,
+				1693AF98E2BDFC6F291544D4186E7B0D /* Support Files */,
+			);
+			name = Surge;
+			path = Surge;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0395ACD015CA3144D65A640EA2B034E2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72DC4600E5ED8CA1B5336CEED87FE67A /* Surge-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5462B515D502B3D11590A858636B8B1A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFCE4DE85568D7FEC8DE909A62668760 /* Pods-MLFindBlock-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5B3AC0F72C43103767173FAD6DE016E1 /* Surge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A551143C28AD3393CE03D10E113D9A96 /* Build configuration list for PBXNativeTarget "Surge" */;
+			buildPhases = (
+				AFDBC979E206886BC8B92E449707D2F4 /* Sources */,
+				666227A488795C7868AE4D3CA90E477E /* Frameworks */,
+				0395ACD015CA3144D65A640EA2B034E2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Surge;
+			productName = Surge;
+			productReference = 0E4AD2B3A787AE14FD62A654059CE190 /* Surge.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C2BA530E8E018ADF11B884A7B753E75E /* Pods-MLFindBlock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7B316DC3E39A1E92B328FD7D9F101A2 /* Build configuration list for PBXNativeTarget "Pods-MLFindBlock" */;
+			buildPhases = (
+				24B4C321F60CC673EA36AB8D58A616E0 /* Sources */,
+				8E4A0574C34477FFB354ED7E28D66585 /* Frameworks */,
+				5462B515D502B3D11590A858636B8B1A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FCAE6D343F09C58C0ACA0ACBF06D8ED /* PBXTargetDependency */,
+			);
+			name = "Pods-MLFindBlock";
+			productName = "Pods-MLFindBlock";
+			productReference = 73C5A8F831270C8028B4F87A2E0CF4C8 /* Pods_MLFindBlock.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = E3E35578E5629DABDCCDEB2D7A0773EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C2BA530E8E018ADF11B884A7B753E75E /* Pods-MLFindBlock */,
+				5B3AC0F72C43103767173FAD6DE016E1 /* Surge */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		24B4C321F60CC673EA36AB8D58A616E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0ADB2EF2F0A95E0BD7E2AEC2385C25BB /* Pods-MLFindBlock-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFDBC979E206886BC8B92E449707D2F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68ACEE9E6CEBEF776DD35B0CBD292CB6 /* Arithmetic.swift in Sources */,
+				7E324388961887E36141038DE03CA1B6 /* Auxiliary.swift in Sources */,
+				80241FDAC16638BEC956EF1BAE175CA9 /* Convolution.swift in Sources */,
+				4E70810A026C8616ACABC4F19B260B86 /* Exponential.swift in Sources */,
+				30506F95F450B01A6E238BC0EB616DC4 /* FFT.swift in Sources */,
+				C7F8EAE64035FF81F01E252BD398ACB4 /* Hyperbolic.swift in Sources */,
+				0083D2CC6B24E60B9CDE15C14B975181 /* Matrix.swift in Sources */,
+				50B86492E30166ADF5B299F5BA402704 /* Power.swift in Sources */,
+				0B35575F734020347981F484274CF5C5 /* Surge-dummy.m in Sources */,
+				E646532614B5F2FD0A95C16B48DA6C71 /* Trigonometric.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3FCAE6D343F09C58C0ACA0ACBF06D8ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Surge;
+			target = 5B3AC0F72C43103767173FAD6DE016E1 /* Surge */;
+			targetProxy = C38C474156641CA93693230ED1BAD899 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		063198AB09B9CDB3A695432FC17AD8CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		2634B8DE69E6E9355CE73BD8314FB110 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3327B1D285D11D8F0B00308996269FF /* Surge.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Surge/Surge-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Surge/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Surge/Surge.modulemap";
+				PRODUCT_MODULE_NAME = Surge;
+				PRODUCT_NAME = Surge;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		87EAC867385563488A6D8F1E74AC46B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		CC2F32DB07D9C0807C8EAA21243F9C88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 024A84182564B907E6B8727BF8DEC3B8 /* Pods-MLFindBlock.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MLFindBlock/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MLFindBlock/Pods-MLFindBlock.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EE403943214EAC01573DA604AADCA1ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B54DEDEA58995A5174334C9760EE43A /* Pods-MLFindBlock.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MLFindBlock/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MLFindBlock/Pods-MLFindBlock.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FB9D57C6682F9C229C8F444E8F3C486C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3327B1D285D11D8F0B00308996269FF /* Surge.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Surge/Surge-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Surge/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Surge/Surge.modulemap";
+				PRODUCT_MODULE_NAME = Surge;
+				PRODUCT_NAME = Surge;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87EAC867385563488A6D8F1E74AC46B4 /* Debug */,
+				063198AB09B9CDB3A695432FC17AD8CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A551143C28AD3393CE03D10E113D9A96 /* Build configuration list for PBXNativeTarget "Surge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2634B8DE69E6E9355CE73BD8314FB110 /* Debug */,
+				FB9D57C6682F9C229C8F444E8F3C486C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7B316DC3E39A1E92B328FD7D9F101A2 /* Build configuration list for PBXNativeTarget "Pods-MLFindBlock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE403943214EAC01573DA604AADCA1ED /* Debug */,
+				CC2F32DB07D9C0807C8EAA21243F9C88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

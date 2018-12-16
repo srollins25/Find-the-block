@@ -12,6 +12,7 @@ import UIKit
 class Block {
     var block: UIView?
     var label: Int?
+    //var brain = NeuralNetwork(4, 32, 4)
     //var x: Float?
     //var y: Float?
     
