@@ -12,9 +12,13 @@ class ViewController: UIViewController {
 
     var score = 0
     var genCount = 0
+    var numOfBlocks = 100
+    var m = Matrix(_rows: 2, _col: 2)
+    var m2 = Matrix(_rows: 2, _col: 2)
+    
     var blocks = [Block]()
     let finishBlock = UIView()
-    var brain = Perceptron()
+    //var brain = Perceptron()
     var inputs: Array<Float> = [-1,0.5]
     let point = CGPoint(x:Int(arc4random()%UInt32(UIScreen.main.bounds.width)),y:Int(arc4random()%UInt32(UIScreen.main.bounds.height)))
     
@@ -65,6 +69,7 @@ class ViewController: UIViewController {
     }()
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         view.addSubview(button)
         view.addSubview(button2)
@@ -78,9 +83,18 @@ class ViewController: UIViewController {
         finishBlock.center.y = 200
         //view.addSubview(finishBlock)
         plotBlocks()
+        m.data = [[3, 6], [7, 4]]
+        m2.data = [[9, 5], [8, 1]]
+        
+        m.print()
+        m.multiply(n: 2)
+        var m3 = Matrix.multiply(a: m, b: m2)
+        m.print()
+        m2.print()
+        m3.print()
 
-        let guess = brain.guess(inputs: inputs)
-        print("guess: ", guess)
+        //let guess = brain.guess(inputs: inputs)
+        //print("guess: ", guess)
         
     }
     
@@ -98,9 +112,9 @@ class ViewController: UIViewController {
         genLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -340).isActive = true
         genCount = genCount + 1
         
-        for i in 0 ..< 30
+        for i in 0 ..< numOfBlocks
         {
-            if(blocks.count != 30)
+            if(blocks.count != numOfBlocks)
             {
                 blocks.append(Block())
                 print("Block:", i, blocks[i].block?.center.x, blocks[i].block?.center.y)
@@ -146,13 +160,10 @@ class ViewController: UIViewController {
         {
             var inputs = [Float((view.block?.center.x)!), Float((view.block?.center.y)!)]
             var target = view.label
-            brain.train(inputs: inputs, target: view.label!)
+            //brain.train(inputs: inputs, target: view.label!)
             
-            var guess = brain.guess(inputs: inputs)
-            if(guess == target)
-            {
-                
-            }
+            //var guess = brain.guess(inputs: inputs)
+
             
             if(((view.block?.center.x)! > UIScreen.main.bounds.width || (view.block?.center.x)! < CGFloat(0.0)) || ((view.block?.center.y)! > UIScreen.main.bounds.height || (view.block?.center.y)! < CGFloat(0.0)))
             {
@@ -184,8 +195,8 @@ class ViewController: UIViewController {
                 let duration: Double = 1.0
                 UIView.animate(withDuration: duration)
                 {
-                    view.block!.center.x += CGFloat.random(in: -20...20)
-                    view.block!.center.y += CGFloat.random(in: -20...20)
+                    //view.block!.center.x += CGFloat.random(in: -20...20)
+                    //view.block!.center.y += CGFloat.random(in: -20...20)
                 }
                 print("x:", view.block!.center.x, "y:", view.block!.center.y)
             }

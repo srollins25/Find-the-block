@@ -12,6 +12,7 @@ import UIKit
 class Block {
     var block: UIView?
     var label: Int?
+    //var score = 0
     //var brain = NeuralNetwork(4, 32, 4)
     //var x: Float?
     //var y: Float?
@@ -36,6 +37,13 @@ class Block {
         {
             label = -1
         }
+    }
+    
+    func think()  {
+        let inputs = [1.0, 0.5, 0.2, 0.3]
+        //let output = self.brain.predict(inputs)
+        
+
     }
 }
 
