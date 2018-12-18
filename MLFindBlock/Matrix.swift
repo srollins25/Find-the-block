@@ -8,6 +8,8 @@
 
 import Foundation
 import UIKit
+import Surge
+
 
 class Matrix {
     var rows: Int?
@@ -96,8 +98,7 @@ class Matrix {
     }
     
     class func multiply(a: Matrix, b: Matrix) -> Matrix {
-        //var a = self
-        //var b = a
+        
         var result = Matrix(_rows: a.rows!, _col: b.col!)
         var sum = 0.0
         

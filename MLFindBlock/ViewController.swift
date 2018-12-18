@@ -8,32 +8,27 @@
 
 import UIKit
 
-
-
+struct Traingdata {
+    var inputs: [Double]
+    var targets: [Double]
+}
 
 class ViewController: UIViewController {
 
-    struct Traingdata {
-        var inputs: [Double]
-        var targets: [Double]
-    }
-    
+
     var score = 0
     var genCount = 0
     var numOfBlocks = 100
     var traingData: [Traingdata] = []
-//    var m = Matrix(_rows: 2, _col: 2)
-//    var m2 = Matrix(_rows: 2, _col: 2)
     
     var arr = [1, 0, -5]
     var nn = NeuralNetwork(inputs: 2, hidden: 2, outputs: 1)
     var input = [1.0, 0.0]
     var target = [1.0]
-//    var a = Matrix(_rows: 2, _col: 2)
     
     var blocks = [Block]()
     let finishBlock = UIView()
-    //var brain = Perceptron()
+
     var inputs: Array<Float> = [-1,0.5]
     let point = CGPoint(x:Int(arc4random()%UInt32(UIScreen.main.bounds.width)),y:Int(arc4random()%UInt32(UIScreen.main.bounds.height)))
     
@@ -102,38 +97,20 @@ class ViewController: UIViewController {
         finishBlock.backgroundColor = UIColor.green
         finishBlock.center.x = 200
         finishBlock.center.y = 200
-        //view.addSubview(finishBlock)
         plotBlocks()
-//        m.data = [[3, 6], [7, 4]]
-//        m2.data = [[9, 5], [8, 1]]
-        //var output = nn.feedforward(input_array: self.input)
-        
-//        Matrix.fromArray(arr: arr)
-        //print(output)
-        for i in 0 ... 100000
+
+        for i in 0 ... 10000
         {
-            var data = traingData[Int.random(in: 0 ... traingData.count - 1)]
+            for data in traingData
+            {
             nn.train(inputs: data.inputs, targetarray: data.targets)
-        
+            }
         }
         
         print(nn.feedforward(input_array: [1, 0]))
         print(nn.feedforward(input_array: [0, 1]))
         print(nn.feedforward(input_array: [1, 1]))
         print(nn.feedforward(input_array: [0, 0]))
-        
-        //nn.train(inputs: input, targetarray: target)
-//        a.data = [[2, 7], [7, 3]] 
-//        a.print()
-        //a.map(function: self.doubleIt)
-//        a.print()
-        
-        //m.print()
-//        m.multiply(n: 2)
-
-
-        //let guess = brain.guess(inputs: inputs)
-        //print("guess: ", guess)
         
     }
     
@@ -174,11 +151,8 @@ class ViewController: UIViewController {
             }
             blocks[i].block?.frame.size.width = 25
             blocks[i].block?.frame.size.height = 25
-            //blocks[i].block?.center.x = p.x
-            //blocks[i].block?.center.y = p.y
             view.addSubview(blocks[i].block!)
             scoreLabel.text = "Score: "
-            //var str = genLabel.text
             genLabel.text = "\("Generation:") \(genCount)"
         }
         self.view.addSubview(finishBlock)
@@ -214,7 +188,6 @@ class ViewController: UIViewController {
                 {
                     blocks.remove(at: index)
                     view.block!.isHidden = true
-                    //scoreLabel.text = "Score: removed view!!"
                     print("removed view!!")
                     print(scoreLabel.text!)
                 }
@@ -226,7 +199,6 @@ class ViewController: UIViewController {
                 {
                     blocks.remove(at: index2)
                     view.block!.isHidden = true
-                    //scoreLabel.text = "Score: removed view!!"
                     score += 1
                     print("made it home!!")
                     print(scoreLabel.text!)

@@ -8,11 +8,12 @@
 
 import Foundation
 import UIKit
+import Surge
 
 func sigmoid(x: Int) -> Double
 {
     //print("Output: ", (1 / (1 + exp(Double(-x)))))
-    return 1 / (1 + exp(Double(x)))
+    return 1 / (1 + exp(Double(-x)))
 }
 
 func dsigmoid(y: Int) -> Double {
@@ -61,6 +62,7 @@ class NeuralNetwork
     
     func train(inputs: [Double], targetarray: [Double])
     {
+        
         var inputs2 = Matrix.fromArray(arr: inputs)
         var hidden = Matrix.multiply(a: self.weightsih!, b: inputs2)
         hidden.add(n: self.biasH!)
@@ -82,7 +84,6 @@ class NeuralNetwork
         gradient.multiply(n: learningrate!)
         
         
-        
         var hiddenT = Matrix.transpose(matrix: hidden, row: hidden.rows!, col: hidden.col!)
         var weighthodeltas = Matrix.multiply(a: gradient, b: hiddenT)
         
@@ -100,7 +101,6 @@ class NeuralNetwork
         var weightihdeltas = Matrix.multiply(a: hiddengraient, b: inputsT)
         self.weightsih?.add(n: weightihdeltas)
         self.biasH?.add(n: hiddengraient)
-        
         
         
         print("-----------------------------------")
