@@ -12,20 +12,14 @@ import UIKit
 class Matrix {
     var rows: Int?
     var col: Int?
-    var data = [[Int]]()
+    var data = [[Double]]()
     
     init(_rows: Int, _col: Int) {
         self.rows = _rows
         self.col = _col
-        self.data = [[Int]]()
-        data = [[Int]](repeating: [Int](repeating: 0, count: col!), count: rows!)
-        for i in 0 ... rows! - 1
-        {
-            for j in 0 ... col! - 1
-            {
-                self.data[i][j] = 0
-            }
-        }
+        self.data = [[Double]]()
+        data = [[Double]](repeating: [Double](repeating: 0, count: col!), count: rows!)
+
     }
     
     func randomize(){
@@ -33,12 +27,12 @@ class Matrix {
         {
             for j in 0 ... col! - 1
             {
-                self.data[i][j] = Int.random(in: 1 ... 10)
+                self.data[i][j] = Double.random(in: -1 ... 1)
             }
         }
     }
     
-    func add(n: Int) {
+    func add(n: Double) {
         for i in 0 ... rows! - 1
         {
             for j in 0 ... col! - 1
@@ -58,18 +52,40 @@ class Matrix {
         }
     }
     
-    func map(function: (Int) -> Int) {
+    class func fromArray(arr: [Double]) -> Matrix
+    {
+        var m = Matrix(_rows: arr.count, _col: 1)
+        
+        for i in 0 ... arr.count -  1
+        {
+            m.data[i][0] = Double(arr[i])
+        }
+        //m.print()
+        return m
+    }
+    
+    typealias Func = (Int) -> Double
+    typealias Func2 = (Int) -> Double
+    
+    func map(function: Func) {
         for i in 0 ... rows! - 1
         {
             for j in 0 ... col! - 1
             {
                 var val = self.data[i][j]
-                self.data[i][j] = function(val)
+                self.data[i][j] = function(Int(val))
             }
         }
     }
     
-    func multiply(n: Int) {
+    class func map(m: Matrix, f: Func) -> Matrix
+    {
+        var m = Matrix(_rows: m.rows!, _col: m.col!)
+        m.map(function: f)
+        return m
+    }
+    
+    func multiply(n: Double) {
         for i in 0 ... rows! - 1
         {
             for j in 0 ... col! - 1
@@ -83,33 +99,59 @@ class Matrix {
         //var a = self
         //var b = a
         var result = Matrix(_rows: a.rows!, _col: b.col!)
-        var sum = 0
+        var sum = 0.0
         
         for i in 0 ... result.rows! - 1
         {
             for j in 0 ... result.col! - 1
             {
-                sum = 0
+                sum = 0.0
                 for k in 0 ... a.col! - 1
                 {
                     sum += (a.data[i][k] * b.data[k][j])
                     //self.matrix[i][j] *= n.matrix[i][j]
                 }
-                result.data[i][j] = sum
+                result.data[i][j] = Double(sum)
             }
         }
         return result
     }
     
+    class func subtract(a: Matrix, b: Matrix) -> Matrix {
+        var result = Matrix(_rows: a.rows!, _col: a.col!)
+        for i in 0 ... result.rows! - 1
+        {
+            for j in 0 ... result.col! - 1
+            {
+                result.data[i][j] = a.data[i][j] - b.data[i][j]
+            }
+        }
+        
+        return result
+    }
     
-    func transpose() -> Matrix {
-        let result = Matrix(_rows: self.col!, _col: self.rows!)
+    func toArray() -> [Double]
+    {
+        var arr = [Double]()
         
         for i in 0 ... self.rows! - 1
         {
             for j in 0 ... self.col! - 1
             {
-                result.data[j][i] = self.data[i][j]
+                arr.append(self.data[i][j])
+            }
+        }
+        return arr
+    }
+    
+    class func transpose(matrix: Matrix, row: Int, col: Int) -> Matrix {
+        let result = Matrix(_rows: col, _col: row)
+        
+        for i in 0 ... row - 1
+        {
+            for j in 0 ... col - 1
+            {
+                result.data[j][i] = matrix.data[i][j]
             }
         }
         return result

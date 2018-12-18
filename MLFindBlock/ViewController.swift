@@ -8,13 +8,28 @@
 
 import UIKit
 
+
+
+
 class ViewController: UIViewController {
 
+    struct Traingdata {
+        var inputs: [Double]
+        var targets: [Double]
+    }
+    
     var score = 0
     var genCount = 0
     var numOfBlocks = 100
-    var m = Matrix(_rows: 2, _col: 2)
-    var m2 = Matrix(_rows: 2, _col: 2)
+    var traingData: [Traingdata] = []
+//    var m = Matrix(_rows: 2, _col: 2)
+//    var m2 = Matrix(_rows: 2, _col: 2)
+    
+    var arr = [1, 0, -5]
+    var nn = NeuralNetwork(inputs: 2, hidden: 2, outputs: 1)
+    var input = [1.0, 0.0]
+    var target = [1.0]
+//    var a = Matrix(_rows: 2, _col: 2)
     
     var blocks = [Block]()
     let finishBlock = UIView()
@@ -75,6 +90,12 @@ class ViewController: UIViewController {
         view.addSubview(button2)
         view.addSubview(scoreLabel)
         view.addSubview(genLabel)
+        
+        traingData.append(Traingdata(inputs: [0, 1], targets: [1]))
+        traingData.append(Traingdata(inputs: [1, 0], targets: [1]))
+        traingData.append(Traingdata(inputs: [0, 0], targets: [0]))
+        traingData.append(Traingdata(inputs: [1, 1], targets: [0]))
+        
         // Do any additional setup after loading the view, typically from a nib.
         finishBlock.frame.size.width = 30
         finishBlock.frame.size.height = 30
@@ -83,21 +104,43 @@ class ViewController: UIViewController {
         finishBlock.center.y = 200
         //view.addSubview(finishBlock)
         plotBlocks()
-        m.data = [[3, 6], [7, 4]]
-        m2.data = [[9, 5], [8, 1]]
+//        m.data = [[3, 6], [7, 4]]
+//        m2.data = [[9, 5], [8, 1]]
+        //var output = nn.feedforward(input_array: self.input)
         
-        m.print()
-        m.multiply(n: 2)
-        var m3 = Matrix.multiply(a: m, b: m2)
-        m.print()
-        m2.print()
-        m3.print()
+//        Matrix.fromArray(arr: arr)
+        //print(output)
+        for i in 0 ... 100000
+        {
+            var data = traingData[Int.random(in: 0 ... traingData.count - 1)]
+            nn.train(inputs: data.inputs, targetarray: data.targets)
+        
+        }
+        
+        print(nn.feedforward(input_array: [1, 0]))
+        print(nn.feedforward(input_array: [0, 1]))
+        print(nn.feedforward(input_array: [1, 1]))
+        print(nn.feedforward(input_array: [0, 0]))
+        
+        //nn.train(inputs: input, targetarray: target)
+//        a.data = [[2, 7], [7, 3]] 
+//        a.print()
+        //a.map(function: self.doubleIt)
+//        a.print()
+        
+        //m.print()
+//        m.multiply(n: 2)
+
 
         //let guess = brain.guess(inputs: inputs)
         //print("guess: ", guess)
         
     }
     
+    func doubleIt(x: Int) -> Int
+    {
+        return x * 2
+    }
     
     @objc func plotBlocks()
     {
@@ -195,10 +238,10 @@ class ViewController: UIViewController {
                 let duration: Double = 1.0
                 UIView.animate(withDuration: duration)
                 {
-                    //view.block!.center.x += CGFloat.random(in: -20...20)
-                    //view.block!.center.y += CGFloat.random(in: -20...20)
+                    view.block!.center.x += CGFloat.random(in: -20...20)
+                    view.block!.center.y += CGFloat.random(in: -20...20)
                 }
-                print("x:", view.block!.center.x, "y:", view.block!.center.y)
+                //print("x:", view.block!.center.x, "y:", view.block!.center.y)
             }
         }
         print("")
